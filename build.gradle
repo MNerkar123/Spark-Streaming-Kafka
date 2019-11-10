@@ -1,0 +1,31 @@
+plugins {
+    id 'scala'
+}
+group 'com.datastacks.streaming'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-core
+    compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.4.2'
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-sql
+    compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.4.2'
+    compile group: 'org.apache.spark', name: 'spark-streaming_2.11', version: '2.4.2'
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-10
+    compile group: 'org.apache.spark', name: 'spark-streaming-kafka-0-10_2.11', version: '2.4.2'
+
+
+
+
+
+
+
+}
